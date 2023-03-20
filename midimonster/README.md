@@ -1,5 +1,9 @@
 # Home Assistant Add-on: MIDIMonster
 
+## About
+This add-on allow you to use [MIDIMonster](https://midimonster.net/) inside Home Assistant.
+Currently it supports MIDI and MQTT as backends, so you can translate a MQTT message into a MIDI command and vice-versa.
+
 ## TODO:
 - Fix path dependency when starting outside of source dir
 - Create a MidiMonster config from the hass container config.
