@@ -29,5 +29,5 @@ options:
 schema: 
   message: str
   display: list(sh1106|ssd1306|ssd1309|ssd1322|ssd1325|ssd1327|ssd1331|ssd1351|ssd1362|winstar_weh|ws0010)
-  #display_rotate: list(0|1|2|3)
+  display_rotate: list(0|1|2|3)
 #image: "ghcr.io/home-assistant/{arch}-addon-example"
