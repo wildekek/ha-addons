@@ -1,6 +1,6 @@
-# Example Home Assistant add-on repository
+# Wildekek's Home Assistant add-on repository
 
-This repository can be used as a "blueprint" for add-on development to help you get started.
+A collection of the HA add-ons I created
 
 Add-on documentation: <https://github.com/wildekek/ha-addons>
 
