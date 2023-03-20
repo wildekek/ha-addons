@@ -18,8 +18,8 @@ This repository contains the following add-ons
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-no-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-yes-red.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-yes-red.svg
 [i386-shield]: https://img.shields.io/badge/i386-no-red.svg
