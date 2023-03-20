@@ -3,7 +3,8 @@ name: OLED add-on
 version: "0.0.1"
 slug: oled
 description: Use OLED screens via i2c
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/wildekek/ha-addons/tree/main/oled"
+stage: experimental
 arch:
   - aarch64
 init: false

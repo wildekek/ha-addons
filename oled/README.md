@@ -1,6 +1,6 @@
-# Home Assistant Add-on: Example add-on
+# Home Assistant Add-on: OLED
 
-_Example add-on to use as a blueprint for new add-ons._
+This add-on uses [luma.oled](https://luma-oled.readthedocs.io/en/latest/) to display text on an OLED display.
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
