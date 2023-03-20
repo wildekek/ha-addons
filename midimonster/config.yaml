@@ -6,8 +6,11 @@ description: Use MIDI devices in Home Assistant
 url: "https://github.com/home-assistant/addons-example/tree/main/example"
 stage: experimental
 arch:
+  - armhf
+  - armv7
   - aarch64
   - amd64
+  - i386
 services: 
   - mqtt:need
 apparmor: false
