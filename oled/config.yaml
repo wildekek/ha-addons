@@ -1,0 +1,26 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: OLED add-on
+version: "0.0.1"
+slug: oled
+description: Use OLED screens via i2c
+url: "https://github.com/home-assistant/addons-example/tree/main/example"
+arch:
+  - aarch64
+init: false
+apparmor: false
+full_access: true
+devices:
+  - /dev/i2c-0
+  - /dev/i2c-1
+  - /dev/i2c-10
+  - /dev/i2c-22
+map:
+  - config:rw
+options:
+  display: null
+  display_rotate: null
+schema: 
+  message: str
+  display: list(sh1106|ssd1306|ssd1309|ssd1322|ssd1325|ssd1327|ssd1331|ssd1351|ssd1362|winstar_weh|ws0010)
+  display_rotate: list(0,1,2,3)
+#image: "ghcr.io/home-assistant/{arch}-addon-example"

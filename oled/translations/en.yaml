@@ -1,0 +1,10 @@
+configuration:
+  message:
+    name: Message
+    description: Show this when starting.
+  display:
+    name: Display type
+    description: "The type of OLED display you want to use. See https://luma-oled.readthedocs.io/en/latest/intro.html"
+  display_rotate:
+    name: Rotation
+    description: "Rotate the display. 0 is no rotation, 1 is rotate 90° clockwise, 2 is 180° rotation and 3 represents 270° rotation."
