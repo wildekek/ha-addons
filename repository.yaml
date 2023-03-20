@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Wildekek's Home Asstant Add-ons
+url: 'https://github.com/wildekek/ha-addons'
+maintainer: Willem Vooijs <willem@vooijs.eu>
