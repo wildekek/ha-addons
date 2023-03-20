@@ -1,0 +1,25 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: MIDIMonster
+version: "0.0.1"
+slug: midimonster
+description: Use MIDI devices in Home Assistant
+url: "https://github.com/home-assistant/addons-example/tree/main/example"
+stage: experimental
+arch:
+  - aarch64
+  - amd64
+services: 
+  - mqtt:need
+apparmor: false
+full_access: true
+#privileged: 
+#  - SYS_RESOURCE
+#udev: true
+#host_dbus: true
+#devices:
+#  - /dev/snd/seq
+init: false
+audio: false
+map:
+  - config:rw
+#image: "ghcr.io/home-assistant/{arch}-addon-example"
