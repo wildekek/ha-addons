@@ -6,7 +6,11 @@ description: Use OLED screens via i2c
 url: "https://github.com/wildekek/ha-addons/tree/main/oled"
 stage: experimental
 arch:
+  - armhf
+  - armv7
   - aarch64
+  - amd64
+  - i386
 services: 
   - mqtt:need
 init: false
