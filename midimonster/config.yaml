@@ -3,7 +3,7 @@ name: MIDIMonster
 version: "0.0.1"
 slug: midimonster
 description: Use MIDI devices in Home Assistant
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/wildekek/ha-addons/tree/main/midimonster"
 stage: experimental
 arch:
   - armhf

@@ -7,6 +7,8 @@ See: https://midimonster.net/getStarted.html#creating-a-new-configuration
 
 (This config should be moved to the config tab in HA)
 
+To access a USB MIDI controller, it need to run privileged, so disable "Protection mode".
+
 ### Example:
 ```
 [backend midi]
