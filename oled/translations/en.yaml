@@ -2,7 +2,13 @@ configuration:
   message:
     name: Message
     description: Show this when starting.
-  display:
+  display_interface_serial:
+    name: Serial interface
+    description: Which interface does the device use?
+  display_interface_address:
+    name: Serial address
+    description: Which address does the device use?
+  display_type:
     name: Display type
     description: "The type of OLED display you want to use. See https://luma-oled.readthedocs.io/en/latest/intro.html"
   display_rotate:

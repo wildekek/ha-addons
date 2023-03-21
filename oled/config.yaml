@@ -24,10 +24,17 @@ devices:
 map:
   - config:rw
 options:
-  display: null
-  display_rotate: null
+  message: "Hello world!"
+  display_interface_serial: i2c
+  display_interface_port: 1
+  display_interface_address: 60
+  display_type: sh1106
+  display_rotate: "2"
 schema: 
   message: str
-  display: list(sh1106|ssd1306|ssd1309|ssd1322|ssd1325|ssd1327|ssd1331|ssd1351|ssd1362|winstar_weh|ws0010)
+  display_interface_serial: list(i2c)
+  display_interface_port: int
+  display_interface_address: int
+  display_type: list(sh1106)
   display_rotate: list(0|1|2|3)
 #image: "ghcr.io/home-assistant/{arch}-addon-example"

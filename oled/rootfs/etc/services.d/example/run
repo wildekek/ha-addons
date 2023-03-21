@@ -4,17 +4,23 @@
 # s6-overlay docs: https://github.com/just-containers/s6-overlay
 # ==============================================================================
 
-# Add your code here
 
-# Declare variables
-#declare message
+## Get the mqqt options from the services API.
+mqtt_host=$(bashio::services mqtt "host")
+mqtt_user=$(bashio::services mqtt "username")
+mqtt_password=$(bashio::services mqtt "password")
 
-## Get the 'message' key from the user config options.
-#message=$(bashio::config 'message')
+## Get the user config options.
+message=$(bashio::config 'message')
+display_type=$(bashio::config 'display_type')
+display_rotate=$(bashio::config 'display_rotate')
+display_interface_serial=$(bashio::config 'display_interface_serial')
+display_interface_port=$(bashio::config 'display_interface_port')
+display_interface_address=$(bashio::config 'display_interface_address')
 
 ## Print the message the user supplied, defaults to "Hello World..."
-#bashio::log.info "${message:="Hello World..."}"
+bashio::log.info "Displaying: ${message}"
 
 ## Run your program
 #exec /usr/bin/my_program
-python3 /config/oled/oled.py
+python3 /usr/bin/oled.py --mqtt_host="${mqtt_host}" --mqtt_user="${mqtt_user}" --mqtt_password="${mqtt_password}" --message="${message}" --display_type="${display_type}" --display_rotate="${display_rotate}" --display_interface_serial="${display_interface_serial}" --display_interface_port="${display_interface_port}" --display_interface_address="${display_interface_address}"
